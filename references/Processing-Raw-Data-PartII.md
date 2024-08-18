@@ -1,4 +1,4 @@
-# Understanding Data
+# Processing Raw Data Part 2
 
 While other works focused solely on accelerometer data, most current smart
 devices contain more carry-on sensors, like a gyroscope, which could provide
@@ -23,8 +23,26 @@ x-axis (deg/s),y-axis (deg/s),z-axis (deg/s) --> deg / s
 
 Accelerometer data measured in G-forces (g) — A single G-force for us here on planet Earth is equivalent to 9.8 m/s^2 (speed)
 
-![alt text](image.png)
+![Acelerometro](image.png)
 
 Gyroscope data measured in degrees/seconds (rotation)
 
-![alt text](image-1.png)
+![Giroscopio](image-1.png)
+
+# Supervised Learning 
+
+![Supervised Learning](image-2.png)
+
+We are gonnna create a multi classification model, becouse we have multiples labels with multiples barbell exercises. Additionlly is the algorithm could identify the rest time, the time between the exercices. 
+
+# Data Science Life Cicle 
+
+![alt text](image-3.png)
+
+El siguiente comando engloba todos los archivos csv de una sola vez
+
+files = glob('../../data/raw/MetaMotion/*.csv')
+
+# Python String rstrip () method
+
+Removes any trailing (ending) characters, where space is the default trailing character to remove.
