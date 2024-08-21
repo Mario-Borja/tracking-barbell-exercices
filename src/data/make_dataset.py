@@ -25,7 +25,7 @@ len(files)
 # --------------------------------------------------------------
 
 
-data_path = "../../data/raw/MetaMotion\\"
+data_path = "../../data/raw/MetaMotion/"
 f = files[0]
 
 participant = f.split("-")[0].replace(data_path,"")
@@ -44,6 +44,7 @@ df['category'] = category
 # --------------------------------------------------------------
 # Read all files
 # --------------------------------------------------------------
+
 
 
 
