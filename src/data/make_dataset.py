@@ -24,7 +24,7 @@ len(files)
 # Extract features from filename
 # --------------------------------------------------------------
 
-
+# tener en cuenta los cambios con el data path
 data_path = "../../data/raw/MetaMotion/"
 f = files[0]
 
@@ -45,8 +45,19 @@ df['category'] = category
 # Read all files
 # --------------------------------------------------------------
 
+acc_df = pd.DataFrame() 
+gyr_df = pd.DataFrame() 
 
+acc_set = 1
+gyr_set = 1
 
+for f in files:
+    
+    participant = f.split("-")[0].replace(data_path,"")
+
+    label = f.split("-")[1]
+
+    category = f.split("-")[2].rstrip('123')
 
 
 # --------------------------------------------------------------

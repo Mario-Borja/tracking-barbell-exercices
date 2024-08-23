@@ -46,3 +46,9 @@ files = glob('../../data/raw/MetaMotion/*.csv')
 # Python String rstrip () method
 
 Removes any trailing (ending) characters, where space is the default trailing character to remove.
+
+# --------------------------------------------------------------
+# Read all files
+# --------------------------------------------------------------
+
+we gonna use a loop to read all the files, but the problem is slow 
